@@ -1,0 +1,23 @@
+{% block content %}
+{% load staticfiles %}
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/notehome.css' %}">
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- {% for note in notes %}
+    <h1>{{note.pin}}</h1>
+    {% endfor %} -->
+    <marquee behavior="scroll" direction="right" scrollamount="30">
+        <h1>WELCOME TO ATM</h1>
+    </marquee>
+    <h2>StepsForNewBuddies: <a href="{% url 'steps' %}">Click here</a></h2>
+    <h2><a href="{% url 'Login' %}">Login</a></h2>
+    <h2><a href="{% url 'set' %}">settings</a></h2>
+</body>
+
+</html>
+{% endblock %}
